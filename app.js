@@ -7,6 +7,7 @@ const socket = require('socket.io');
 const LocalStrategy = require('passport-local').Strategy;
 
 const config = require('./config');
+const routes = require('./routes');
 
 const app = express();
 app.server = http.createServer(app);
@@ -26,6 +27,8 @@ passport.use(new LocalStrategy({
 ));
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
+
+app.use('/v1', routes);
 
 app.get('/', (req, res, next) => {
   res.json({message: 'Chat API is ALIVE!'})
