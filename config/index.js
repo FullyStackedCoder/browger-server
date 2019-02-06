@@ -1,5 +1,5 @@
 module.exports = {
   "port": 8000,
-  "mongoUrl": "Add your mongodb url here",
+  "mongoUrl": "mongodb+srv://maverick:5nSwQlUSSMZB14Va@cluster0-aogco.mongodb.net/browger?retryWrites=true",
   "bodyLimit": "100kb"
 }
