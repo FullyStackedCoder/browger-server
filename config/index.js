@@ -1,7 +1,5 @@
-const mongoDb = require('mongodb');
-
 module.exports = {
   "port": 8000,
-  "mongoUrl": "",
+  "mongoUrl": "Add your mongodb url here",
   "bodyLimit": "100kb"
 }
