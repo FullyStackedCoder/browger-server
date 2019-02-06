@@ -1,0 +1,49 @@
+{
+  "name": "browger-server",
+  "version": "1.0.0",
+  "description": "REST Api server for browger chat client.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FullyStackedCoder/browger-server.git"
+  },
+  "keywords": [
+    "chat",
+    "messenger",
+    "node",
+    "express",
+    "react",
+    "mongodb",
+    "REST",
+    "API",
+    "slack",
+    "clone",
+    "redux"
+  ],
+  "author": "FullyStackedCoder",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FullyStackedCoder/browger-server/issues"
+  },
+  "homepage": "https://github.com/FullyStackedCoder/browger-server#readme",
+  "devDependencies": {
+    "eslint": "^5.13.0",
+    "nodemon": "^1.18.9"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "express-jwt": "^5.3.1",
+    "install": "^0.12.2",
+    "jsonwebtoken": "^8.4.0",
+    "mongoose": "^5.4.10",
+    "npm": "^6.7.0",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.1",
+    "socket.io": "^2.2.0"
+  }
+}
