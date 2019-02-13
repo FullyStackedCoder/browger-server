@@ -21,7 +21,8 @@ app.use(passport.initialize());
 let Account = require('./models/account');
 passport.use(new LocalStrategy({
   usernameField: 'email',
-  passwordField: 'password'
+  passwordField: 'password',
+  passReqToCallback: true
 },
   Account.authenticate()
 ));
