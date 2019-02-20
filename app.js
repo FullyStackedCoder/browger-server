@@ -21,15 +21,14 @@ app.use(passport.initialize());
 let Account = require('./models/account');
 passport.use(new LocalStrategy({
   usernameField: 'email',
-  passwordField: 'password',
-  passReqToCallback: true
+  passwordField: 'password'
 },
   Account.authenticate()
 ));
 passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
-app.use('/v1', routes);
+app.use('/api/v1', routes);
 
 app.get('/', (req, res, next) => {
   res.json({message: 'Chat API is ALIVE!'})
