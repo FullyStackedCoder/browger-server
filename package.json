@@ -1,48 +1,42 @@
 {
   "name": "browger-server",
   "version": "1.0.0",
-  "description": "REST Api server for browger chat client.",
-  "main": "app.js",
+  "description": "",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FullyStackedCoder/browger-server.git"
-  },
-  "keywords": [
-    "chat",
-    "messenger",
-    "node",
-    "express",
-    "react",
-    "mongodb",
-    "REST",
-    "API",
-    "slack clone",
-    "clone",
-    "redux"
-  ],
   "author": "FullyStackedCoder",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FullyStackedCoder/browger-server/issues"
-  },
-  "homepage": "https://github.com/FullyStackedCoder/browger-server#readme",
-  "devDependencies": {
-    "eslint": "^5.13.0",
-    "nodemon": "^1.18.9"
-  },
   "dependencies": {
+    "aws-sdk": "^2.412.0",
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "express-jwt": "^5.3.1",
-    "install": "^0.12.2",
-    "jsonwebtoken": "^8.4.0",
-    "mongoose": "^5.4.10",
-    "passport": "^0.4.0",
-    "passport-local": "^1.0.0",
-    "passport-local-mongoose": "^5.0.1",
-    "socket.io": "^2.2.0"
+    "express-validator": "^5.3.1",
+    "jsonwebtoken": "^8.5.0",
+    "mongoose": "^5.4.15",
+    "socket.io": "^2.2.0",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-eslint": "^9.0.0",
+    "eslint": "^5.14.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-config-react-app": "^3.0.7",
+    "eslint-plugin-flowtype": "^2.50.3",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-react": "^7.12.4",
+    "nodemon": "^1.18.10",
+    "prettier": "^1.16.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended"
+    ]
   }
 }
